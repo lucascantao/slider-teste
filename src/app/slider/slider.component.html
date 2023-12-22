@@ -1,0 +1,13 @@
+<h1 @sliderWorks>slider works!</h1>
+
+<button type="button" (click)="onPrevious()">Previous</button>
+<button type="button" (click)="onNext()">Next</button>
+
+<div [@animaSlider]="counter">
+    <div class="item-text" *ngFor="let s of sliders; let i=index">
+        <div *ngIf="counter===i">
+            <h3>{{s.title}}</h3>
+            <p>{{s.content}}</p>
+        </div>
+    </div>
+</div>
