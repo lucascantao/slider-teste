@@ -5,7 +5,7 @@
 
 <div [@animaSlider]="counter">
     <div class="item-text" *ngFor="let s of sliders; let i=index">
-        <div *ngIf="counter===i">
+        <div class="item" *ngIf="counter===i">
             <h3>{{s.title}}</h3>
             <p>{{s.content}}</p>
         </div>
